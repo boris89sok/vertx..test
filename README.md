@@ -1,17 +1,8 @@
-# The Simplest Vert.x-web Server
+- מימוש הקוד התבצע בתוכנת אקליפס.
+ - שליחת JSON התבצע ב - Postman לכתובת http://localhost:8080/analyze   בPOST מסוג  text/html.
+- גוף האויבקט {
+ "text": "word"
+ }.
 
-This is a sample project to show the minimal deployment of a `vertx-web` based routing
-HTTP server.
-
-To run:
-
-```
-mvn org.codehaus.mojo:exec-maven-plugin:exec -Dexec.executable=java \
-	-Dexec.args="-cp %classpath io.vertx.core.Launcher run test.project1.Server"
-```
-
-To test:
-
-```
-curl -D- http://localhost:8080/
+להרצת התוכנית יש צורך בספריית java json jar ו-Vert.x.
 ```
